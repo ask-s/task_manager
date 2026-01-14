@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+     <div class="container">
+        <header>
+            <h1>📝 Task Manager Pro</h1>
+            <p>Organize your tasks efficiently</p>
+        </header>
+
+        <div class="stats">
+            <div class="stat-card">
+                <h3 id="totalTasks">0</h3>
+                <p>Total Tasks</p>
+            </div>
+            <div class="stat-card">
+                <h3 id="completedTasks">0</h3>
+                <p>Completed</p>
+            </div>
+            <div class="stat-card">
+                <h3 id="pendingTasks">0</h3>
+                <p>Pending</p>
+            </div>
+        </div>
+
+        <div class="task-input-section">
+            <h2>Add New Task</h2>
+            <div class="input-group">
+                <input type="text" id="taskTitle" placeholder="Task title..." />
+            </div>
+            <div class="input-group">
+                <input type="text" id="taskDesc" placeholder="Task description (optional)..." />
+            </div>
+            <div class="priority-select">
+                <button class="priority-btn" data-priority="low">Low Priority</button>
+                <button class="priority-btn active" data-priority="medium">Medium Priority</button>
+                <button class="priority-btn" data-priority="high">High Priority</button>
+            </div>
+            <button class="add-task-btn" onclick="addTask()">Add Task</button>
+        </div>
+
+        <div class="filter-section">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Tasks</button>
+                <button class="filter-btn" data-filter="active">Active</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+                <button class="filter-btn" data-filter="high">High Priority</button>
+                <button class="filter-btn" data-filter="medium">Medium Priority</button>
+                <button class="filter-btn" data-filter="low">Low Priority</button>
+            </div>
+        </div>
+
+        <div class="tasks-section" id="tasksContainer">
+            <div class="empty-state">
+                <h3>No tasks yet!</h3>
+                <p>Add your first task to get started</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
