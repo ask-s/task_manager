@@ -1,2 +1,3 @@
 # task_manager
-I will create a modern and professional 5-page website as a web developer using clean HTML, CSS, JavaScript or React. The website will be fully responsive, user-friendly, and visually attractive, including pages like Home, About, Services, Portfolio, and Contact, suitable for personal or business use.
+This project includes a fully functional task manager built with HTML, CSS, and JavaScript. Users can add tasks with titles, descriptions, set priority levels, mark tasks as complete, delete them, apply filters, and view real-time statistics. It features a modern responsive design with smooth animations and clean code.
+
